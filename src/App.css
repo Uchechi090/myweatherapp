@@ -20,3 +20,29 @@
 .App-link {
   color: #09d3ac;
 }
+
+.container-fluid {
+  background: url("assets/cloudy.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 1000px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .container-fluid {
+    background: url("assets/cloudy.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 2475px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) { ... } */
+
+/* Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) { ... } */
+
+/* Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) { ... } */

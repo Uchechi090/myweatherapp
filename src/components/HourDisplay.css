@@ -1,0 +1,24 @@
+.card {
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    background-color: #e1f5fe;
+    filter: opacity(0.5);
+}
+
+.card-body {
+    padding: 4.25rem !important;
+}
+
+.ty-col {
+    color: blueviolet;
+}
+
+.dt-sp {
+    /* display: block; */
+    word-wrap: break-word;
+}
+
+h3 {
+    color: #00ffe9;
+}
