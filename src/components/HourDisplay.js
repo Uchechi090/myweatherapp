@@ -62,12 +62,6 @@ class HourDisplay extends Component {
         }
     }
 
-    // componentDidUpdate(prevProps) {
-    //     if (this.props.dateText !== prevProps.dateText) {
-    //         moment(this.props.dateText).format("DD/MM/YY, h:mm:ss");
-    //         this.setState({ dateText: this.props.dateText });
-    //     }
-    // }
     componentDidUpdate(prevProps) {
         if (this.props.icon !== prevProps.icon) {
             this.get_WeatherIcon(this.weatherIcon, this.props.icon);
