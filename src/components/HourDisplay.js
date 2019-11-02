@@ -1,9 +1,14 @@
 import React, { Component } from "react";
 import moment from "moment";
 
-
-import "weather-icons/css/weather-icons.css";
 import "./HourDisplay.css";
+import Thunderstorm from "../assets/icons/Thunderstorms";
+import Sleet from "../assets/icons/Sleet";
+import StormShowers from "../assets/icons/StormShowers";
+import Snow from "../assets/icons/Snow";
+import Fog from "../assets/icons/Fog";
+import DaySun from "../assets/icons/DaySun";
+import DayFog from "../assets/icons/DayFog";
 
 class HourDisplay extends Component {
     constructor(props) {
@@ -19,13 +24,13 @@ class HourDisplay extends Component {
         };
 
         this.weatherIcon = {
-            Thunderstorm: "wi-thunderstorm",
-            Drizzle: "wi-sleet",
-            Rain: "wi-storm-showers",
-            Snow: "wi-snow",
-            Atmosphere: "wi-fog",
-            Clear: "wi-day-sunny",
-            Clouds: "wi-day-fog"
+            Thunderstorm: <Thunderstorm />,
+            Drizzle: <Sleet />,
+            Rain: <StormShowers />,
+            Snow: <Snow />,
+            Atmosphere: <Fog />,
+            ClearSky: <DaySun />,
+            Clouds: <DayFog />
         };
     }
 
@@ -51,8 +56,8 @@ class HourDisplay extends Component {
             case rangeId >= 701 && rangeId <= 781:
                 this.setState({ icon: icons.Atmosphere });
                 break;
-            case rangeId === 800:
-                this.setState({ icon: icons.Clear });
+            case rangeId == 800:
+                this.setState({ icon: icons.ClearSky });
                 break;
             case rangeId >= 801 && rangeId <= 804:
                 this.setState({ icon: icons.Clouds });
@@ -75,7 +80,7 @@ class HourDisplay extends Component {
             <div className="p-2 bd-highlight font-weight-normal d-flex flex-wrap flex-column bd-highlight mb-3">
                 <span className="">{dateText}</span>
                 <span className="">
-                    <i className={`wi ${icon}`} />
+                    <i>{icon}</i>
                 </span>
                 <span className="text-small p-2">max: {maxTemp}&deg;&nbsp;min: {minTemp}&deg;</span>
                 <span className="font-weight-bold">avg: {temperature}&deg;</span>
