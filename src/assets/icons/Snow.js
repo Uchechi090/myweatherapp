@@ -6,7 +6,7 @@ const Snow = () => {
         // <?xml version="1.0" encoding="iso-8859-1"?>
 // <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xmlSpace="preserve">
+	 viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xmlSpace="preserve">
 <g>
 	<path style="fill:#303C42;" d="M258.083,416c-2.938-5.125-9.479-6.833-14.563-3.906l-30.188,17.428v-24.189h117.333
 		c41.167,0,74.667-33.5,74.667-74.667c0-11.495-2.828-22.263-7.49-32h7.49C464.146,298.667,512,250.813,512,192

@@ -5,7 +5,7 @@ const Thunderstorms = () => {
         // <?xml version="1.0" encoding="iso-8859-1"?>
 // <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xmlSpace="preserve">
+	 viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xmlSpace="preserve">
 <path style="fill:#83CFDF;" d="M280,85.68c48.64,0,88,38.08,88,85.12c0,47.12-39.36,85.2-88,85.2H88c-39.76,0-72-31.2-72-69.68
 	c0-36.4,28.8-66.16,65.52-69.36c-1.04-5.12-1.52-10.4-1.52-15.76C80,54.08,119.36,16,168,16c44.4,0,81.12,31.84,87.12,73.2
 	C262.96,86.88,271.36,85.68,280,85.68z"/>

@@ -39,8 +39,9 @@ class HourDisplay extends Component {
         return degrees;
     }
 
-    get_WeatherIcon(icons, rangeId) {
-        switch (true) {
+    get_WeatherIcon(icons) {
+        const rangeId = this.props.icon;
+        switch (rangeId) {
             case rangeId >= 200 && rangeId < 232:
                 this.setState({ icon: icons.Thunderstorm });
                 break;
@@ -56,7 +57,7 @@ class HourDisplay extends Component {
             case rangeId >= 701 && rangeId <= 781:
                 this.setState({ icon: icons.Atmosphere });
                 break;
-            case rangeId == 800:
+            case rangeId === 800:
                 this.setState({ icon: icons.ClearSky });
                 break;
             case rangeId >= 801 && rangeId <= 804:
@@ -67,19 +68,23 @@ class HourDisplay extends Component {
         }
     }
 
-    componentDidUpdate(prevProps) {
-        if (this.props.icon !== prevProps.icon) {
-            this.get_WeatherIcon(this.weatherIcon, this.props.icon);
-            this.setState({ icon: this.props.icon });
-        }
+    // componentDidUpdate(prevProps) {
+    //     if (this.props.icon !== prevProps.icon) {
+    //         this.get_WeatherIcon(this.weatherIcon, this.props.icon);
+    //     }
+    // }
+
+    componentDidMount() {
+        this.get_WeatherIcon(this.weatherIcon);
     }
 
     render() {
         const { dateText, icon, maxTemp, minTemp, temperature, description } = this.state;
+        console.log(icon)
         return (
             <div className="p-2 bd-highlight font-weight-normal d-flex flex-wrap flex-column bd-highlight mb-3">
                 <span className="">{dateText}</span>
-                <span className="">
+                <span className="" style={{height: "2px", width: "2px", paddingBottom: "30px", paddingLeft: "30px"}}>
                     <i>{icon}</i>
                 </span>
                 <span className="text-small p-2">max: {maxTemp}&deg;&nbsp;min: {minTemp}&deg;</span>

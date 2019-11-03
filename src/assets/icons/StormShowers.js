@@ -5,7 +5,7 @@ const StormShowers = () => {
         // <?xml version="1.0" encoding="iso-8859-1"?>
 // <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xmlSpace="preserve">
+	 viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xmlSpace="preserve">
 <path style="fill:#303C42;" d="M143.396,363.771c-3.646-1.823-8-1.396-11.208,1.094l-33.146,25.365
 	c-8.708,6.188-13.708,15.563-13.708,25.771c0,17.646,14.354,32,32,32s32-14.354,32-32v-42.667
 	C149.333,369.271,147.021,365.563,143.396,363.771z"/>
